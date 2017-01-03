@@ -1,0 +1,32 @@
+<import src="../../utils/wxParse/wxParse.wxml"/>
+
+
+
+
+<view class="page__detail">
+
+
+<p class="">2017年1月3日早，中央气象台将大雾预警提升至最高等级红色，同时继续发布霾橙色预警。</p><span class="">据中央气象台预计，1月3日白天到夜间，低于500米的浓雾</span><p class="">雾和霾天气还将持续到1月4至5日，而后随着冷空气的到来，自北向南减弱或消散。</p>
+
+
+
+    <view class="detail">
+        <view class="detail__title">
+            {{ article.title }}
+        </view>
+        <view class="article__desc">
+            <text class="article__source" wx:if="{{ article.tag }}">{{ article.tag }}</text>
+            <text class="article__time">{{ article.date }}</text>
+            <view class="article__count">
+                <image class="article__icon" src="/image/icon-comt.png"></image>
+                <text>{{ article.comment }}</text>
+                <image class="article__icon" src="/image/icon-priaze.png"></image>
+                <text>{{ article.praise }}</text>
+            </view>
+        </view>
+
+        <view class="article__content wxParse">
+            <template is="wxParse" data="{{wxParseData}}"/>
+        </view>
+    </view>
+</view>

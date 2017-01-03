@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/news/index",
+        "pages/news/detail"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "News Reader",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#333",
+        "selectedColor": "#d81e06",
+        "borderStyle": "white",
+        "backgroundColor": "#ffffff",
+        "list": [{
+            "pagePath": "pages/news/index",
+            "iconPath": "image/icon-news.png",
+            "selectedIconPath": "image/icon-news-a.png",
+            "text": "头条"
+        }, {
+            "pagePath": "",
+            "iconPath": "image/icon-news.png",
+            "selectedIconPath": "",
+            "text": "测试"
+        }, {
+            "pagePath": "",
+            "iconPath": "image/icon-news.png",
+            "selectedIconPath": "",
+            "text": "测试"
+        }, {
+            "pagePath": "",
+            "iconPath": "image/icon-news.png",
+            "selectedIconPath": "",
+            "text": "测试"
+        }]
+    },
+    "debug":true
+}

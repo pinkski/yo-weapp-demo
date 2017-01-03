@@ -1,0 +1,15 @@
+<!-- index.wxml -->
+
+<import src="../common/template/article.wxml"/>
+
+<view>
+    
+    <view class="articles">
+        <block wx:for="{{ articles }}" wx:key="id">
+            <template is="{{ 'newsStyle' + 3 }}" data="{{ ...item }}" />
+        </block>
+    </view>
+
+    <include src="../common/template/footer.wxml"/>
+
+</view>

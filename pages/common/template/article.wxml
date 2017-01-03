@@ -1,0 +1,27 @@
+
+
+<!--三图模式-->
+<template name="newsStyle3">
+    <navigator url="/pages/news/detail?id={{ id }}&chid={{ chid }}&style={{ style }}&tag={{ tag }}">
+    <view class="article__item">
+        <view class="article__info">
+            <view class="article__title">{{ title }}</view>
+            <view class="article__images">
+                <image class="article__imgview" src="{{ icons[0] }}"></image>
+                <image class="article__imgview" src="{{ icons[1] }}"></image>
+                <image class="article__imgview" src="{{ icons[2] }}"></image>
+            </view>
+            <view class="article__desc">
+                <text class="article__source" wx:if="{{ tag }}">{{ tag }}</text>
+                <text class="article__time">{{ date }}</text>
+                <view class="article__count">
+                    <image class="article__icon" src="/image/icon-comt.png"></image>
+                    <text>{{ commont }}</text>
+                    <image class="article__icon" src="/image/icon-priaze.png"></image>
+                    <text>{{ parise }}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    </navigator>
+</template>
